@@ -1,0 +1,17 @@
+{
+  "name": "search-same-file",
+  "version": "1.0.0",
+  "description": "search same files put it to source folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jianfa",
+  "license": "ISC",
+  "dependencies":{
+  		"commander": "^2.3.0"
+  	},
+  	"bin": {
+    "compose": "bin/c-cli.js"
+  	}
+}
