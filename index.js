@@ -26,12 +26,14 @@ var composeFiles=function(sfiles,tfiles){
 	if(!sfiles||!tfiles){
 		return !sfiles?tfiles:sfiles;
 	} 
-	
+	  
 	for(var index in sfiles){
 		var tfile=tfiles[index];
 		var sfile=sfiles[index];
 		if(tfile&&tfile.mtime>sfile.mtime){  
 			sfiles[index]["Tpath"]=tfile.path;
+		}else{
+			delete sfiles[index];
 		}
 	}
 	 
